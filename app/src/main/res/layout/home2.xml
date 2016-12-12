@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="231dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/MainAnim"
+            android:background="@drawable/mainanim" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/usT" />
+
+        <TextView
+            android:text="This Month:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView15"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignEnd="@+id/textView15"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView16" />
+
+        <TextView
+            android:text="Tobacco Deaths:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:id="@+id/textView12"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Worldwide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="51dp"
+            android:layout_marginEnd="51dp" />
+
+        <TextView
+            android:text="United States"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wwY"
+            android:layout_alignBottom="@+id/usY"
+            android:layout_alignLeft="@+id/textView14"
+            android:layout_alignStart="@+id/textView14"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usM"
+            android:layout_alignBaseline="@+id/textView16"
+            android:layout_alignBottom="@+id/textView16"
+            android:layout_alignLeft="@+id/usT"
+            android:layout_alignStart="@+id/usT" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wwT"
+            android:layout_alignBaseline="@+id/usT"
+            android:layout_alignBottom="@+id/usT"
+            android:layout_alignLeft="@+id/wwY"
+            android:layout_alignStart="@+id/wwY" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usY"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_alignLeft="@+id/usM"
+            android:layout_alignStart="@+id/usM" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wwM"
+            android:layout_alignBaseline="@+id/usM"
+            android:layout_alignBottom="@+id/usM"
+            android:layout_alignLeft="@+id/wwT"
+            android:layout_alignStart="@+id/wwT" />
+
+        <TextView
+            android:text="Today:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/textView12"
+            android:layout_alignRight="@+id/textView12"
+            android:layout_alignEnd="@+id/textView12" />
+
+        <TextView
+            android:text="This Hour:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:layout_marginBottom="8dp"
+            android:layout_above="@+id/usT"
+            android:layout_alignLeft="@+id/textView17"
+            android:layout_alignStart="@+id/textView17" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usH"
+            android:layout_alignBaseline="@+id/textView27"
+            android:layout_alignBottom="@+id/textView27"
+            android:layout_alignLeft="@+id/usT"
+            android:layout_alignStart="@+id/usT" />
+
+        <TextView
+            android:text="xxxxxxx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wwH"
+            android:layout_alignBaseline="@+id/usH"
+            android:layout_alignBottom="@+id/usH"
+            android:layout_alignLeft="@+id/wwT"
+            android:layout_alignStart="@+id/wwT" />
+
+        <TextView
+            android:text="This Year:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/textView16"
+            android:layout_alignRight="@+id/textView16"
+            android:layout_alignEnd="@+id/textView16" />
+
+    </RelativeLayout>
+
+</LinearLayout>
