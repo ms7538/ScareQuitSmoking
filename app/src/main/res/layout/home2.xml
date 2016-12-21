@@ -22,7 +22,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        >
 
         <TextView
             android:text="xxxxxxx"
@@ -30,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/textView15"
             android:layout_centerHorizontal="true"
+            android:textColor="#ff0000"
             android:id="@+id/usT" />
 
         <TextView
@@ -40,6 +43,7 @@
             android:layout_alignRight="@+id/textView15"
             android:layout_alignEnd="@+id/textView15"
             android:layout_marginTop="12dp"
+            android:textColor="#ffdd00"
             android:id="@+id/textView16" />
 
         <TextView
@@ -50,6 +54,7 @@
             android:id="@+id/textView12"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
+            android:textColor="#ffdd00"
             android:layout_alignParentStart="true" />
 
         <TextView
@@ -59,6 +64,7 @@
             android:id="@+id/textView14"
             android:layout_alignBaseline="@+id/textView13"
             android:layout_alignBottom="@+id/textView13"
+            android:textColor="#ffdd00"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_marginRight="51dp"
@@ -71,6 +77,7 @@
             android:id="@+id/textView13"
             android:layout_alignBaseline="@+id/textView12"
             android:layout_alignBottom="@+id/textView12"
+            android:textColor="#ffdd00"
             android:layout_centerHorizontal="true" />
 
         <TextView
@@ -81,6 +88,7 @@
             android:layout_alignBottom="@+id/usY"
             android:layout_alignLeft="@+id/textView14"
             android:layout_alignStart="@+id/textView14"
+            android:textColor="#ff0000"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" />
 
@@ -91,6 +99,7 @@
             android:id="@+id/usM"
             android:layout_alignBaseline="@+id/textView16"
             android:layout_alignBottom="@+id/textView16"
+            android:textColor="#ff0000"
             android:layout_alignLeft="@+id/usT"
             android:layout_alignStart="@+id/usT" />
 
@@ -101,6 +110,7 @@
             android:id="@+id/wwT"
             android:layout_alignBaseline="@+id/usT"
             android:layout_alignBottom="@+id/usT"
+            android:textColor="#ff0000"
             android:layout_alignLeft="@+id/wwY"
             android:layout_alignStart="@+id/wwY" />
 
@@ -111,6 +121,7 @@
             android:id="@+id/usY"
             android:layout_alignBaseline="@+id/textView17"
             android:layout_alignBottom="@+id/textView17"
+            android:textColor="#ff0000"
             android:layout_alignLeft="@+id/usM"
             android:layout_alignStart="@+id/usM" />
 
@@ -121,6 +132,7 @@
             android:id="@+id/wwM"
             android:layout_alignBaseline="@+id/usM"
             android:layout_alignBottom="@+id/usM"
+            android:textColor="#ff0000"
             android:layout_alignLeft="@+id/wwT"
             android:layout_alignStart="@+id/wwT" />
 
@@ -131,6 +143,7 @@
             android:id="@+id/textView15"
             android:layout_marginTop="43dp"
             android:layout_below="@+id/textView12"
+            android:textColor="#ffdd00"
             android:layout_alignRight="@+id/textView12"
             android:layout_alignEnd="@+id/textView12" />
 
@@ -141,6 +154,7 @@
             android:id="@+id/textView27"
             android:layout_marginBottom="8dp"
             android:layout_above="@+id/usT"
+            android:textColor="#ffdd00"
             android:layout_alignLeft="@+id/textView17"
             android:layout_alignStart="@+id/textView17" />
 
@@ -151,6 +165,7 @@
             android:id="@+id/usH"
             android:layout_alignBaseline="@+id/textView27"
             android:layout_alignBottom="@+id/textView27"
+            android:textColor="#ff0000"
             android:layout_alignLeft="@+id/usT"
             android:layout_alignStart="@+id/usT" />
 
@@ -161,6 +176,7 @@
             android:id="@+id/wwH"
             android:layout_alignBaseline="@+id/usH"
             android:layout_alignBottom="@+id/usH"
+            android:textColor="#ff0000"
             android:layout_alignLeft="@+id/wwT"
             android:layout_alignStart="@+id/wwT" />
 
@@ -171,6 +187,7 @@
             android:id="@+id/textView17"
             android:layout_marginTop="8dp"
             android:layout_below="@+id/textView16"
+            android:textColor="#ffdd00"
             android:layout_alignRight="@+id/textView16"
             android:layout_alignEnd="@+id/textView16" />
 

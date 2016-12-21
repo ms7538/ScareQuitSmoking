@@ -2,6 +2,7 @@ package poloapps.scarequitsmoking;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.media.MediaPlayer;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class HomeActivity extends AppCompatActivity {
     @Override
@@ -33,6 +36,7 @@ public class HomeActivity extends AppCompatActivity {
                 setdeaths();
             }
         });
+        setRepeatingAsyncTask();
     }
     private void setdeaths( ){
 
@@ -74,9 +78,27 @@ public class HomeActivity extends AppCompatActivity {
         wwToday.setText(Integer.toString(dailyWW));
         wwMonthly.setText(Integer.toString(monthWW));
         wwYearly.setText(Integer.toString(yearWW));
+    }
+    private void setRepeatingAsyncTask() {
 
+        final Handler handler = new Handler();
+        Timer timer = new Timer();
 
-
-   }
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(new Runnable() {
+                    public void run() {
+                        try {
+                            setdeaths();
+                        } catch (Exception e) {
+                            // error, do something
+                        }
+                    }
+                });
+            }
+        };
+        timer.schedule(task, 0, 30*1000);  // interval of one minute
+    }
 
 }
