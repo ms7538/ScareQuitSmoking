@@ -22,4 +22,50 @@
     <item
         android:duration="200"
         android:drawable="@drawable/th7"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th8"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th9"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th10"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th11"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th12"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th13"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th14"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th15"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th16"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th17"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th18"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th19"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th20"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th21"/>
+    <item
+        android:duration="200"
+        android:drawable="@drawable/th22"/>
+
 </animation-list>
