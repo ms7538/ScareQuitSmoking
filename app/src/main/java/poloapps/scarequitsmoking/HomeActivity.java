@@ -47,10 +47,10 @@ public class HomeActivity extends AppCompatActivity {
         int WWdeathspermin  = WWdeathsperhour / 60;
 
         Calendar calendar = Calendar.getInstance();
-        int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-        int dayOfYear  = calendar.get(Calendar.DAY_OF_YEAR);
-        int hourOfDay  = calendar.get(Calendar.HOUR_OF_DAY);
-        int minOfHour  = calendar.get(Calendar.MINUTE);
+        int dayOfMonth    = calendar.get(Calendar.DAY_OF_MONTH);
+        int dayOfYear     = calendar.get(Calendar.DAY_OF_YEAR);
+        int hourOfDay     = calendar.get(Calendar.HOUR_OF_DAY);
+        int minOfHour     = calendar.get(Calendar.MINUTE);
 
         int hourlyUS   = minOfHour; // 1 death per minute
         int hourlyWW   = minOfHour * WWdeathspermin;
