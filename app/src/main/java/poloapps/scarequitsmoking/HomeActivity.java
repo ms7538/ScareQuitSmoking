@@ -1,12 +1,11 @@
 package poloapps.scarequitsmoking;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
-import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,10 +18,14 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home2);
+        setContentView(R.layout.cig2grave_layout);
+        
+        int animation;
 
-        ImageView mImageViewFilling = (ImageView) findViewById(R.id.MainAnim);
-        ((AnimationDrawable) mImageViewFilling.getBackground()).start();
+        animation = R.id.Anim1;
+
+        final ImageView mGif= (ImageView) findViewById(animation);
+        ((AnimationDrawable) mGif.getBackground()).start();
 
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);
         // Flatline.start();
@@ -30,14 +33,16 @@ public class HomeActivity extends AppCompatActivity {
         setdeaths();
 
         Button button = (Button) findViewById(R.id.simple);
-            button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                setdeaths();
-            }
-        });
-        setRepeatingAsyncTask();
-    }
+        button.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View arg0) {
+            ((AnimationDrawable) mGif.getBackground()).stop();
+            Intent intent = new Intent (HomeActivity.this, TDActivity.class);
+            startActivity(intent);
+        }
+    });
+    setRepeatingAsyncTask();
+}
     private void setdeaths( ){
 
         int WWdeathsperday  = 16854;

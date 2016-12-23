@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,14 +11,21 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="231dp"
+        android:layout_height="278dp"
         android:weightSum="1">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/MainAnim"
-            android:background="@drawable/mainanim" />
+            android:id="@+id/Anim2"
+            android:background="@drawable/an_2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Anim1"
+            android:background="@drawable/an_1" />
+
     </LinearLayout>
 
     <RelativeLayout
@@ -45,17 +53,6 @@
             android:layout_marginTop="12dp"
             android:textColor="#ffdd00"
             android:id="@+id/textView16" />
-
-        <TextView
-            android:text="Tobacco Deaths:"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="54dp"
-            android:id="@+id/textView12"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:textColor="#ffdd00"
-            android:layout_alignParentStart="true" />
 
         <TextView
             android:text="Worldwide"
@@ -192,12 +189,49 @@
             android:layout_alignEnd="@+id/textView16" />
 
         <Button
-            android:text="Refresh"
+            android:text="Diseases"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/simple"
-            android:layout_alignLeft="@+id/textView13"
-            android:layout_alignStart="@+id/textView13" />
+            android:background="@android:color/holo_red_light"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/usH"
+            android:layout_alignStart="@+id/usH" />
+
+        <TextView
+            android:text="Tobacco Deaths:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView12"
+            android:textColor="#ffdd00"
+            android:layout_below="@+id/simple"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Click for more info:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="@android:color/background_light"
+            android:layout_alignBaseline="@+id/simple"
+            android:layout_alignBottom="@+id/simple"
+            android:layout_toLeftOf="@+id/textView13"
+            android:layout_toStartOf="@+id/textView13"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp" />
+
+        <Button
+            android:text="TOXINS"
+            android:layout_width="wrap_content"
+            android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:background="?android:attr/colorActivatedHighlight"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 
