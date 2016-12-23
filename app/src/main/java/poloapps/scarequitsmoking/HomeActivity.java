@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cig2grave_layout);
-        
+
         int animation;
 
         animation = R.id.Anim1;
