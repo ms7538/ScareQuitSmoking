@@ -17,13 +17,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:id="@+id/Anim2"
-            android:background="@drawable/an_2" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/Anim1"
+            android:id="@+id/Animation"
             android:background="@drawable/an_1" />
 
     </LinearLayout>

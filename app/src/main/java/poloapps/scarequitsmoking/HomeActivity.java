@@ -20,11 +20,8 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cig2grave_layout);
 
-        int animation;
-
-        animation = R.id.Anim1;
-
-        final ImageView mGif= (ImageView) findViewById(animation);
+        final ImageView mGif = (ImageView) findViewById(R.id.Animation);
+        mGif.setBackgroundResource(R.drawable.an_2);
         ((AnimationDrawable) mGif.getBackground()).start();
 
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);
@@ -34,15 +31,15 @@ public class HomeActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.simple);
         button.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View arg0) {
-            ((AnimationDrawable) mGif.getBackground()).stop();
-            Intent intent = new Intent (HomeActivity.this, TDActivity.class);
-            startActivity(intent);
-        }
-    });
-    setRepeatingAsyncTask();
-}
+            @Override
+            public void onClick(View arg0) {
+                ((AnimationDrawable) mGif.getBackground()).stop();
+                Intent intent = new Intent (HomeActivity.this, TDActivity.class);
+                startActivity(intent);
+            }
+        });
+        setRepeatingAsyncTask();
+    }
     private void setdeaths( ){
 
         int WWdeathsperday  = 16854;
@@ -50,18 +47,21 @@ public class HomeActivity extends AppCompatActivity {
         int USdeathsperhour = USdeathsperday / 24;
         int WWdeathsperhour = WWdeathsperday / 24;
         int WWdeathspermin  = WWdeathsperhour / 60;
+        int WWdeathspersec  = WWdeathspermin / 60;
 
         Calendar calendar = Calendar.getInstance();
         int dayOfMonth    = calendar.get(Calendar.DAY_OF_MONTH);
         int dayOfYear     = calendar.get(Calendar.DAY_OF_YEAR);
         int hourOfDay     = calendar.get(Calendar.HOUR_OF_DAY);
         int minOfHour     = calendar.get(Calendar.MINUTE);
+        int WWsecdeaths   = calendar.get(Calendar.SECOND) * WWdeathspersec;
 
         int hourlyUS   = minOfHour; // 1 death per minute
-        int hourlyWW   = minOfHour * WWdeathspermin;
-        int dailyUS    = ( hourOfDay * USdeathsperhour )+ minOfHour ;
+        int hourlyWW   = ( minOfHour * WWdeathspermin ) + WWsecdeaths ;
+        int dailyUS    = ( hourOfDay * USdeathsperhour ) + minOfHour ;
         int monthUS    = ( dayOfMonth - 1 ) * USdeathsperday + dailyUS;
-        int dailyWW    = ( hourOfDay * WWdeathsperhour )+ minOfHour ;
+        int dailyWW    = ( hourOfDay * WWdeathsperhour ) + ( minOfHour * WWdeathspermin  )
+                                                                            + WWsecdeaths ;
         int monthWW    = ( dayOfMonth - 1 ) * WWdeathsperday + dailyWW;
         int yearUS     = ( dayOfYear - 1 ) * USdeathsperday + dailyUS;
         int yearWW     = ( dayOfYear - 1 ) * WWdeathsperday + dailyWW;
@@ -103,7 +103,7 @@ public class HomeActivity extends AppCompatActivity {
                 });
             }
         };
-        timer.schedule(task, 0, 30*1000);  // interval of one minute
+        timer.schedule(task, 0, 10*1000);  // interval of one minute
     }
 
 }

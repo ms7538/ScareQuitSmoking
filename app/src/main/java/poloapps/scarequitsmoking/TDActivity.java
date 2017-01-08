@@ -5,8 +5,11 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.ExpandedMenuView;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-
+import android.widget.Toast;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -20,9 +23,26 @@ public class TDActivity extends AppCompatActivity {
         // Flatline.start();
         // Flatline.stop();
 
-
-
         //setRepeatingAsyncTask();
+        Button AsthmaButton = (Button) findViewById(R.id.Aradiobutton);
+        AsthmaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(getApplicationContext(),"Asthma Clicked", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Button LungCancerButton = (Button) findViewById(R.id.LCradiobutton);
+        LungCancerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                Toast.makeText(getApplicationContext(),"Lung Cancer Clicked",
+                                                                         Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 
     @Override
