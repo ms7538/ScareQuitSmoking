@@ -3,21 +3,21 @@
     android:oneshot="false">
     <item
         android:duration="200"
-        android:drawable="@drawable/bh1"/>
+        android:drawable="@mipmap/bh1"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/bh2"/>
+        android:drawable="@mipmap/bh2"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/bh3"/>
+        android:drawable="@mipmap/bh3"/>
     <item
         android:duration="300"
-        android:drawable="@drawable/bh4"/>
+        android:drawable="@mipmap/bh4"/>
     <item
         android:duration="300"
-        android:drawable="@drawable/bh5"/>
+        android:drawable="@mipmap/bh5"/>
     <item
         android:duration="300"
-        android:drawable="@drawable/bh6"/>
+        android:drawable="@mipmap/bh6"/>
 
 </animation-list>

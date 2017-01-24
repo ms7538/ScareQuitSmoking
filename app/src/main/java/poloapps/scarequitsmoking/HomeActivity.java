@@ -21,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.cig2grave_layout);
 
         final ImageView mGif = (ImageView) findViewById(R.id.Animation);
-        mGif.setBackgroundResource(R.drawable.an_2);
+        mGif.setBackgroundResource(R.drawable.an_3);
         ((AnimationDrawable) mGif.getBackground()).start();
 
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);

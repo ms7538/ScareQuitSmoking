@@ -15,7 +15,7 @@
         android:weightSum="1">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/Animation"
             android:background="@drawable/an_1" />

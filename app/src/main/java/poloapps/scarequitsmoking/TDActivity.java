@@ -24,24 +24,24 @@ public class TDActivity extends AppCompatActivity {
         // Flatline.stop();
 
         //setRepeatingAsyncTask();
-        Button AsthmaButton = (Button) findViewById(R.id.Aradiobutton);
-        AsthmaButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                Toast.makeText(getApplicationContext(),"Asthma Clicked", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        Button LungCancerButton = (Button) findViewById(R.id.LCradiobutton);
-        LungCancerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                Toast.makeText(getApplicationContext(),"Lung Cancer Clicked",
-                                                                         Toast.LENGTH_LONG).show();
-            }
-        });
+//        Button AsthmaButton = (Button) findViewById(R.id.Aradiobutton);
+//        AsthmaButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//
+//                Toast.makeText(getApplicationContext(),"Asthma Clicked", Toast.LENGTH_LONG).show();
+//            }
+//        });
+//
+//        Button LungCancerButton = (Button) findViewById(R.id.LCradiobutton);
+//        LungCancerButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//
+//                Toast.makeText(getApplicationContext(),"Lung Cancer Clicked",
+//                                                                         Toast.LENGTH_LONG).show();
+//            }
+//        });
 
     }
 

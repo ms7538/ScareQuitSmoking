@@ -6,69 +6,69 @@
 
     <item
         android:duration="200"
-        android:drawable="@drawable/th1"/>
+        android:drawable="@mipmap/th1"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th2"/>
+        android:drawable="@mipmap/th2"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th3"/>
+        android:drawable="@mipmap/th3"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th4"/>
+        android:drawable="@mipmap/th4"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th5"/>
+        android:drawable="@mipmap/th5"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th6"/>
+        android:drawable="@mipmap/th6"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th7"/>
+        android:drawable="@mipmap/th7"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th8"/>
+        android:drawable="@mipmap/th8"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th9"/>
+        android:drawable="@mipmap/th9"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th10"/>
+        android:drawable="@mipmap/th10"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th11"/>
+        android:drawable="@mipmap/th11"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th12"/>
+        android:drawable="@mipmap/th12"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th13"/>
+        android:drawable="@mipmap/th13"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th14"/>
+        android:drawable="@mipmap/th14"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th15"/>
+        android:drawable="@mipmap/th15"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th16"/>
+        android:drawable="@mipmap/th16"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th17"/>
+        android:drawable="@mipmap/th17"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th18"/>
+        android:drawable="@mipmap/th18"/>
     <item
         android:duration="200"
-        android:drawable="@drawable/th19"/>
+        android:drawable="@mipmap/th19"/>
     <item
         android:duration="300"
-        android:drawable="@drawable/th20"/>
+        android:drawable="@mipmap/th20"/>
     <item
         android:duration="5000"
-        android:drawable="@drawable/th21"/>
+        android:drawable="@mipmap/th21"/>
     <item
         android:duration="10000"
-        android:drawable="@drawable/th23"/>
+        android:drawable="@mipmap/th23"/>
 
 </animation-list>
