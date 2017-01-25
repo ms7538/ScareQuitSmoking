@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -20,8 +21,22 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cig2grave_layout);
 
+        int RandAnimSeq = new Random().nextInt(3);
         final ImageView mGif = (ImageView) findViewById(R.id.Animation);
-        mGif.setBackgroundResource(R.drawable.an_3);
+
+        switch (RandAnimSeq) {
+            case 0:
+                mGif.setBackgroundResource(R.drawable.an_1);
+                break;
+            case 1:
+                mGif.setBackgroundResource(R.drawable.an_2);
+                break;
+            case 2:
+                mGif.setBackgroundResource(R.drawable.an_3);
+                break;
+
+        }
+
         ((AnimationDrawable) mGif.getBackground()).start();
 
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);

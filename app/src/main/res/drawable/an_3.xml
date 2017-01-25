@@ -73,7 +73,6 @@
     <item
         android:duration="300"
         android:drawable="@mipmap/ol23"/>
-
     <item
         android:duration="300"
         android:drawable="@mipmap/ol24"/>
@@ -104,5 +103,62 @@
     <item
         android:duration="300"
         android:drawable="@mipmap/ol33"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol34"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol35"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol36"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol37"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol38"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol39"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol40"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol41"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol42"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol43"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol44"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol45"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol46"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol47"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol48"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol49"/>
+    <item
+        android:duration="300"
+        android:drawable="@mipmap/ol50"/>
+    <item
+        android:duration="10000"
+        android:drawable="@mipmap/ol51"/>
+    <item
+        android:duration="10000"
+        android:drawable="@mipmap/ol53"/>
 
 </animation-list>
