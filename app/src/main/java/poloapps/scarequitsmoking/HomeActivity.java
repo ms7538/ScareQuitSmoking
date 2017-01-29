@@ -14,6 +14,10 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 public class HomeActivity extends AppCompatActivity {
     @Override
@@ -38,7 +42,9 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         ((AnimationDrawable) mGif.getBackground()).start();
-
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);
         // Flatline.start();
         // Flatline.stop();
