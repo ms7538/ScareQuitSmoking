@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cig2grave_layout);
+        setContentView(R.layout.home_layout);
 
         int RandAnimSeq = new Random().nextInt(3);
         final ImageView mGif = (ImageView) findViewById(R.id.Animation);
@@ -55,7 +55,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 ((AnimationDrawable) mGif.getBackground()).stop();
-                Intent intent = new Intent (HomeActivity.this, TDActivity.class);
+                Intent intent = new Intent (HomeActivity.this, DisActivity.class);
                 startActivity(intent);
             }
         });
@@ -65,7 +65,17 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 ((AnimationDrawable) mGif.getBackground()).stop();
-                Intent intent = new Intent (HomeActivity.this, TDActivity.class);
+                Intent intent = new Intent (HomeActivity.this, CncrActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button ToxBtn = (Button) findViewById(R.id.tox_btn);
+        ToxBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                ((AnimationDrawable) mGif.getBackground()).stop();
+                Intent intent = new Intent (HomeActivity.this, ToxActivity.class);
                 startActivity(intent);
             }
         });

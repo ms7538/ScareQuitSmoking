@@ -24,10 +24,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TDActivity"
+            android:name=".CncrActivity"
             android:parentActivityName=".HomeActivity"
             android:screenOrientation="portrait" >
-
+        </activity>
+        <activity
+            android:name=".DisActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ToxActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
