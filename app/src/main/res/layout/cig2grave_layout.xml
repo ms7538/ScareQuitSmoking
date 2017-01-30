@@ -182,16 +182,6 @@
             android:layout_alignRight="@+id/textView16"
             android:layout_alignEnd="@+id/textView16" />
 
-        <Button
-            android:text="Diseases"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/simple"
-            android:background="@android:color/holo_red_light"
-            android:layout_alignParentTop="true"
-            android:layout_alignLeft="@+id/usH"
-            android:layout_alignStart="@+id/usH" />
-
         <TextView
             android:text="Tobacco Deaths:"
             android:layout_width="wrap_content"
@@ -199,22 +189,28 @@
             android:layout_marginTop="10dp"
             android:id="@+id/textView12"
             android:textColor="#ffdd00"
-            android:layout_below="@+id/simple"
+            android:layout_below="@+id/diseases_btn"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-        <TextView
-            android:text="Click for more info:"
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:textColor="@android:color/background_light"
-            android:layout_alignBaseline="@+id/simple"
-            android:layout_alignBottom="@+id/simple"
-            android:layout_toLeftOf="@+id/textView13"
-            android:layout_toStartOf="@+id/textView13"
-            android:layout_marginRight="15dp"
-            android:layout_marginEnd="15dp" />
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6002737231550640/6081052817"/>
+
+        <Button
+            android:text="Diseases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diseases_btn"
+            android:background="@android:color/holo_red_light"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView13"
+            android:layout_alignEnd="@+id/textView13" />
 
         <Button
             android:text="TOXINS"
@@ -226,14 +222,16 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
+
+        <Button
+            android:text="Cancer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-6002737231550640/6081052817"/>
+            android:id="@+id/cancer_btn"
+            android:background="@android:color/holo_red_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
     </RelativeLayout>

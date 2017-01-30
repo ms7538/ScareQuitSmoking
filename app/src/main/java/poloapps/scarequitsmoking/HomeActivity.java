@@ -14,7 +14,7 @@ import java.util.Calendar;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
-import com.google.android.gms.ads.AdListener;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
@@ -50,8 +50,8 @@ public class HomeActivity extends AppCompatActivity {
         // Flatline.stop();
         setdeaths();
 
-        Button button = (Button) findViewById(R.id.simple);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button DisBtn = (Button) findViewById(R.id.diseases_btn);
+        DisBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 ((AnimationDrawable) mGif.getBackground()).stop();
@@ -59,6 +59,17 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button CncrBtn = (Button) findViewById(R.id.cancer_btn);
+        CncrBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                ((AnimationDrawable) mGif.getBackground()).stop();
+                Intent intent = new Intent (HomeActivity.this, TDActivity.class);
+                startActivity(intent);
+            }
+        });
+
         setRepeatingAsyncTask();
     }
     private void setdeaths( ){
