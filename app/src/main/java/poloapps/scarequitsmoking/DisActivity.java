@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -13,6 +15,7 @@ public class DisActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diseases_layout);
+
 
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);
         // Flatline.start();

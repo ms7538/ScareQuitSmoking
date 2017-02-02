@@ -33,10 +33,10 @@ public class HomeActivity extends AppCompatActivity {
                 mGif.setBackgroundResource(R.drawable.an_1);
                 break;
             case 1:
-                mGif.setBackgroundResource(R.drawable.an_2);
+                mGif.setBackgroundResource(R.drawable.an_3);
                 break;
             case 2:
-                mGif.setBackgroundResource(R.drawable.an_3);
+                mGif.setBackgroundResource(R.drawable.an_1);
                 break;
 
         }

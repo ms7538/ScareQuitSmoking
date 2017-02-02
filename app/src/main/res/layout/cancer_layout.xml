@@ -8,28 +8,68 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="218dp">
+        android:layout_height="35dp"
+        android:background="@android:color/darker_gray">
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CncerBack_btn"
+            style="@style/Widget.AppCompat.Button.Small" />
+
+        <TextView
+            android:text="1 / 12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cncr_TextView"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal|center" />
+
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CncerNext_btn"
+            style="@style/Widget.AppCompat.Button.Small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="425dp">
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/black">
+        android:background="@android:color/holo_orange_light">
 
 
-        <ScrollView
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/colorPrimary">
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <Spinner
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
-
-        </ScrollView>
-
+                android:id="@+id/cncr_sel_spinner"
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:foregroundTint="@color/common_google_signin_btn_text_dark_default"
+                android:foregroundTintMode="src_in"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
     </RelativeLayout>
 
 </LinearLayout>
