@@ -4,8 +4,15 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -21,6 +28,29 @@ public class CncrActivity extends AppCompatActivity {
                 R.array.cncer_sel_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        final TextView cancer_tv = (TextView) findViewById(R.id.cancer_TV);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapter, View v,
+                                       int position, long id) {
+                // On selecting a spinner item
+                 String scountry = adapter.getItemAtPosition(position).toString();
+                cancer_tv.setText(scountry);
+                // Showing selected spinner item
+                Toast.makeText(getApplicationContext(),
+                        scountry, Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // TODO Auto-generated method stub
+            }
+        });
+
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);
         // Flatline.start();
         // Flatline.stop();
