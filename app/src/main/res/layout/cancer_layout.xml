@@ -19,7 +19,7 @@
             style="@style/Widget.AppCompat.Button.Small" />
 
         <TextView
-            android:text="1 / 12"
+            android:text="Cancer   1 / 12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Cncr_TextView"
@@ -44,8 +44,8 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            ads:srcCompat="@mipmap/toxins"
-            android:id="@+id/imageView"
+            ads:srcCompat="@mipmap/cncr"
+            android:id="@+id/imageView2"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -62,7 +62,7 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="280dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -74,7 +74,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@android:color/holo_orange_dark"
-                        android:layout_alignParentTop="true"
                         android:layout_centerHorizontal="true">
 
                         <Spinner
@@ -94,31 +93,149 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="171dp">
+                        android:layout_height="265dp"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true">
 
-                        <TextView
-                            android:text="Increased Risk for: "
+                        <Spinner
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView"
-                            android:layout_marginLeft="13dp"
-                            android:layout_marginStart="13dp"
-                            android:layout_marginTop="25dp"
+                            android:id="@+id/spinner2"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_alignBottom="@+id/textView6"
+                            android:layout_toRightOf="@+id/textView6"
+                            android:layout_toEndOf="@+id/textView6" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner4"
+                            android:layout_alignBottom="@+id/textView11"
+                            android:layout_alignLeft="@+id/spinner2"
+                            android:layout_alignStart="@+id/spinner2" />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView24"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:layout_alignBottom="@+id/spinner2"
+                            android:layout_alignLeft="@+id/textView10"
+                            android:layout_alignStart="@+id/textView10"
+                            android:gravity="center"
+                            android:layout_alignRight="@+id/textView10"
+                            android:layout_alignEnd="@+id/textView10" />
+
+                        <TextView
+                            android:text="DETERMINE YOUR INCREASED RISK:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginStart="11dp"
                             android:layout_alignParentTop="true"
+                            android:layout_alignLeft="@+id/textView11"
+                            android:layout_alignStart="@+id/textView11" />
+
+                        <TextView
+                            android:text="Cigarettes Smoked:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView6"
+                            android:layout_marginTop="33dp"
+                            android:layout_below="@+id/textView5"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true" />
 
                         <TextView
-                            android:text="Cancer"
+                            android:text="Selected:"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginStart="8dp"
-                            android:id="@+id/cancer_TV"
-                            android:layout_alignBaseline="@+id/textView"
-                            android:layout_alignBottom="@+id/textView"
-                            android:layout_toRightOf="@+id/textView"
-                            android:layout_toEndOf="@+id/textView" />
+                            android:id="@+id/textView10"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:layout_above="@+id/spinner2"
+                            android:layout_toRightOf="@+id/spinner2"
+                            android:layout_toEndOf="@+id/spinner2"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginStart="7dp" />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView26"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:gravity="center"
+                            android:layout_alignLeft="@+id/textView18"
+                            android:layout_alignStart="@+id/textView18"
+                            android:layout_alignRight="@+id/textView18"
+                            android:layout_alignEnd="@+id/textView18"
+                            android:layout_alignBottom="@+id/spinner4"
+                            android:layout_alignTop="@+id/textView11" />
+
+                        <TextView
+                            android:text="Frequency:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView11"
+                            android:layout_below="@+id/spinner"
+                            android:layout_alignLeft="@+id/textView25"
+                            android:layout_alignStart="@+id/textView25"
+                            android:layout_marginTop="16dp" />
+
+                        <TextView
+                            android:text="Frequency:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:id="@+id/textView25"
+                            android:layout_below="@+id/textView6"
+                            android:layout_toLeftOf="@+id/spinner2"
+                            android:layout_toStartOf="@+id/spinner2" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner"
+                            android:layout_alignBottom="@+id/textView25"
+                            android:layout_alignLeft="@+id/spinner2"
+                            android:layout_alignStart="@+id/spinner2" />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView18"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:gravity="center"
+                            android:layout_alignBottom="@+id/spinner"
+                            android:layout_alignLeft="@+id/textView24"
+                            android:layout_alignStart="@+id/textView24"
+                            android:layout_alignRight="@+id/textView24"
+                            android:layout_alignEnd="@+id/textView24" />
+
+                        <TextView
+                            android:text="INCREASE:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView29"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="24dp" />
+
+                        <TextView
+                            android:text="TextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView30"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
                     </RelativeLayout>
 
                     <com.google.android.gms.ads.AdView
@@ -132,6 +249,7 @@
 
                 </LinearLayout>
             </ScrollView>
+
         </LinearLayout>
 
     </RelativeLayout>

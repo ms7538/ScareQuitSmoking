@@ -1,12 +1,15 @@
 package poloapps.scarequitsmoking;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,18 +35,21 @@ public class CncrActivity extends AppCompatActivity {
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-        final TextView cancer_tv = (TextView) findViewById(R.id.cancer_TV);
 
+        //final TextView cancer_tv = (TextView) findViewById(R.id.cancer_TV);
+        //final EditText et  = (EditText) findViewById(R.id.editText);
+        //final TextView ctv = (TextView) findViewById(R.id.edittext_val);
+        //ctv.setText(String.valueOf(0));
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapter, View v,
                                        int position, long id) {
                 // On selecting a spinner item
-                 String scountry = adapter.getItemAtPosition(position).toString();
-                cancer_tv.setText(scountry);
+                 String spinval = adapter.getItemAtPosition(position).toString();
+          //      cancer_tv.setText(spinval);
                 // Showing selected spinner item
                 Toast.makeText(getApplicationContext(),
-                        scountry, Toast.LENGTH_SHORT).show();
+                        spinval, Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
@@ -51,6 +57,14 @@ public class CncrActivity extends AppCompatActivity {
             }
         });
 
+       // Button B14 = (Button) findViewById(R.id.button14);
+        //B14.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+            //public void onClick(View arg0) {
+               //final int number =Integer.parseInt(et.getText().toString());
+                //ctv.setText(String.valueOf(number));
+         //}
+        //});
         //final MediaPlayer Flatline= MediaPlayer.create(this, R.raw.flatline);
         // Flatline.start();
         // Flatline.stop();
