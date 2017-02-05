@@ -12,4 +12,45 @@
         <item>Mouth And Tongue Cancer</item>
     </string-array>
 
+    <string-array name="cignum_sel_array">
+        <item>Select Amount Of Smoked Cigarettes</item>
+        <item>1 Cigarette</item>
+        <item>5 Cigarettes</item>
+        <item>10 Cigarettes</item>
+        <item>15 Cigarettes</item>
+        <item>20 Cigarettes</item>
+        <item>25 Cigarettes</item>
+        <item>30 Cigarettes</item>
+        <item>35 Cigarettes</item>
+        <item>40 Cigarettes</item>
+        <item>50 Cigarettes</item>
+        <item>75 Cigarettes</item>
+        <item>100 Cigarettes</item>
+        <item>150 Cigarettes</item>
+    </string-array>
+
+    <string-array name="freq_sel_array">
+        <item>Select Frequency</item>
+        <item>Per Day</item>
+        <item>Per Week</item>
+        <item>Per Month</item>
+        <item>Per 6 Months</item>
+        <item>Per Year</item>
+    </string-array>
+
+    <string-array name="len_sel_array">
+        <item>Select Time Duration</item>
+        <item>For 6 Months</item>
+        <item>For 1 Year</item>
+        <item>For 3 Years</item>
+        <item>For 5 Years</item>
+        <item>For 8 Years</item>
+        <item>For 10 Years</item>
+        <item>For 15 Years</item>
+        <item>For 20 Years</item>
+        <item>For 30 Years</item>
+        <item>For 40 Years</item>
+        <item>For 50 Years</item>
+    </string-array>
+
 </resources>

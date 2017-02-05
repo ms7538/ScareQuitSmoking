@@ -52,7 +52,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?android:attr/colorBackgroundFloating">
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/background_light">
 
 
         <LinearLayout
@@ -97,37 +99,6 @@
                         android:descendantFocusability="beforeDescendants"
                         android:focusableInTouchMode="true">
 
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/spinner2"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_alignBottom="@+id/textView6"
-                            android:layout_toRightOf="@+id/textView6"
-                            android:layout_toEndOf="@+id/textView6" />
-
-                        <Spinner
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/spinner4"
-                            android:layout_alignBottom="@+id/textView11"
-                            android:layout_alignLeft="@+id/spinner2"
-                            android:layout_alignStart="@+id/spinner2" />
-
-                        <TextView
-                            android:text="0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView24"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:layout_alignBottom="@+id/spinner2"
-                            android:layout_alignLeft="@+id/textView10"
-                            android:layout_alignStart="@+id/textView10"
-                            android:gravity="center"
-                            android:layout_alignRight="@+id/textView10"
-                            android:layout_alignEnd="@+id/textView10" />
-
                         <TextView
                             android:text="DETERMINE YOUR INCREASED RISK:"
                             android:layout_width="wrap_content"
@@ -137,102 +108,44 @@
                             android:layout_marginLeft="11dp"
                             android:layout_marginStart="11dp"
                             android:layout_alignParentTop="true"
-                            android:layout_alignLeft="@+id/textView11"
-                            android:layout_alignStart="@+id/textView11" />
-
-                        <TextView
-                            android:text="Cigarettes Smoked:"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView6"
-                            android:layout_marginTop="33dp"
-                            android:layout_below="@+id/textView5"
-                            android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true" />
-
-                        <TextView
-                            android:text="Selected:"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView10"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:layout_above="@+id/spinner2"
-                            android:layout_toRightOf="@+id/spinner2"
-                            android:layout_toEndOf="@+id/spinner2"
-                            android:layout_marginLeft="7dp"
-                            android:layout_marginStart="7dp" />
-
-                        <TextView
-                            android:text="0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView26"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:gravity="center"
-                            android:layout_alignLeft="@+id/textView18"
-                            android:layout_alignStart="@+id/textView18"
-                            android:layout_alignRight="@+id/textView18"
-                            android:layout_alignEnd="@+id/textView18"
-                            android:layout_alignBottom="@+id/spinner4"
-                            android:layout_alignTop="@+id/textView11" />
-
-                        <TextView
-                            android:text="Frequency:"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView11"
-                            android:layout_below="@+id/spinner"
-                            android:layout_alignLeft="@+id/textView25"
-                            android:layout_alignStart="@+id/textView25"
-                            android:layout_marginTop="16dp" />
-
-                        <TextView
-                            android:text="Frequency:"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="16dp"
-                            android:id="@+id/textView25"
-                            android:layout_below="@+id/textView6"
-                            android:layout_toLeftOf="@+id/spinner2"
-                            android:layout_toStartOf="@+id/spinner2" />
+                            />
 
                         <Spinner
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/spinner"
-                            android:layout_alignBottom="@+id/textView25"
-                            android:layout_alignLeft="@+id/spinner2"
-                            android:layout_alignStart="@+id/spinner2" />
-
-                        <TextView
-                            android:text="0"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView18"
-                            android:textColor="@android:color/holo_red_dark"
-                            android:gravity="center"
-                            android:layout_alignBottom="@+id/spinner"
-                            android:layout_alignLeft="@+id/textView24"
-                            android:layout_alignStart="@+id/textView24"
-                            android:layout_alignRight="@+id/textView24"
-                            android:layout_alignEnd="@+id/textView24" />
-
-                        <TextView
-                            android:text="INCREASE:"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:id="@+id/textView29"
-                            android:layout_alignParentBottom="true"
+                            android:id="@+id/cignum_sel_spinner"
+                            android:layout_below="@+id/textView5"
                             android:layout_alignParentLeft="true"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginBottom="24dp" />
+                            android:layout_alignParentStart="true" />
 
-                        <TextView
-                            android:text="TextView"
+                        <Spinner
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView30"
-                            android:layout_alignParentBottom="true"
+                            android:id="@+id/leng_sel_spinner"
+                            android:layout_marginTop="6dp"
+                            android:layout_below="@+id/freq_sel_spinner"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/freq_sel_spinner"
+                            android:layout_marginTop="7dp"
+                            android:layout_below="@+id/cignum_sel_spinner"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <Button
+                            android:text="add habit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button2"
+                            style="@style/Widget.AppCompat.Button.Small"
+                            android:background="@android:drawable/btn_default"
+                            android:enabled="false"
+                            android:layout_marginTop="13dp"
+                            android:layout_below="@+id/leng_sel_spinner"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true" />
 
