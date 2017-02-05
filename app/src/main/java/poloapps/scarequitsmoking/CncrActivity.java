@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -55,8 +56,9 @@ public class CncrActivity extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        SharedPreferences mSettings = this.getSharedPreferences("Settings", 0);
+       final SharedPreferences mSettings = this.getSharedPreferences("Settings", 0);
         final SharedPreferences.Editor editor = mSettings.edit();
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapter, View v,
@@ -73,6 +75,7 @@ public class CncrActivity extends AppCompatActivity {
                 // TODO Auto-generated method stub
             }
         });
+
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapter1, View v,
@@ -80,15 +83,11 @@ public class CncrActivity extends AppCompatActivity {
                 // On selecting a spinner item
                 String spinval1 = adapter1.getItemAtPosition(position).toString();
                 Button AdH = (Button) findViewById(R.id.button2);
-                if (spinval1.contains("Select")) {
-                    editor.putInt("S1", 0);
-                }
-                else{
-                    editor.putInt("S1", 1);
-                }
-                editor.commit();
-                AdH.setEnabled(checkAH());
 
+                editor.putInt("S1",position);
+                editor.commit();
+
+                AdH.setEnabled(checkAH());
 
             }
 
@@ -103,16 +102,14 @@ public class CncrActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapter2, View v,
                                        int position, long id) {
                 // On selecting a spinner item
-                String spinval2 = adapter2.getItemAtPosition(position).toString();
+                //String spinval2 = adapter2.getItemAtPosition(position).toString();
                 //      cancer_tv.setText(spinval);
                 Button AdH = (Button) findViewById(R.id.button2);
-                if (spinval2.contains("Select")) {
-                    editor.putInt("S2", 0);
-                }
-                else{
-                    editor.putInt("S2", 1);
-                }
+
+                editor.putInt("S2",position);
+
                 editor.commit();
+
                 AdH.setEnabled(checkAH());
             }
             @Override
@@ -125,20 +122,16 @@ public class CncrActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapter3, View v,
                                        int position, long id) {
                 // On selecting a spinner item
-                String spinval3 = adapter3.getItemAtPosition(position).toString();
+                //String spinval3 = adapter3.getItemAtPosition(position).toString();
 
                 Button AdH = (Button) findViewById(R.id.button2);
-                if (spinval3.contains("Select")) {
-                    editor.putInt("S3", 0);
-                }
-                else{
-                    editor.putInt("S3", 1);
-                }
+                editor.putInt("S3",position);
+
                 editor.commit();
                 AdH.setEnabled(checkAH());
                 // Showing selected spinner item
-               // Toast.makeText(getApplicationContext(),
-                 //       spinval3, Toast.LENGTH_SHORT).show();
+              // Toast.makeText(getApplicationContext(),
+                     //  Integer.toString(position), Toast.LENGTH_SHORT).show();
             }
             @Override
             public void onNothingSelected(AdapterView<?> arg0) {
@@ -146,18 +139,19 @@ public class CncrActivity extends AppCompatActivity {
             }
         });
 
+        Button RiskCalc = (Button) findViewById(R.id.button2);
+        RiskCalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
 
-
-        //setRepeatingAsyncTask();
-//        Button LungCancerButton = (Button) findViewById(R.id.LCradiobutton);
-//        LungCancerButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View arg0) {
-//
-//                Toast.makeText(getApplicationContext(),"Lung Cancer Clicked",
-//                                                                         Toast.LENGTH_LONG).show();
-//            }
-//        });
+                Integer Sp1Sel = mSettings.getInt("S1", 0);
+                Integer Sp2Sel = mSettings.getInt("S2", 0);
+                Integer Sp3Sel = mSettings.getInt("S3", 0);
+                Integer Clc = Sp1Sel*Sp2Sel*Sp3Sel;
+                Toast.makeText(getApplicationContext(), Integer.toString(Clc),
+                                                                    Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 
