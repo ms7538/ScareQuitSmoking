@@ -147,7 +147,7 @@ public class CncrActivity extends AppCompatActivity {
                 Integer Sp1Sel = mSettings.getInt("S1", 0);
                 Integer Sp2Sel = mSettings.getInt("S2", 0);
                 Integer Sp3Sel = mSettings.getInt("S3", 0);
-                Integer Clc = Sp1Sel*Sp2Sel*Sp3Sel;
+                Integer Clc = calcFunc( Sp1Sel, Sp2Sel , Sp3Sel);
                 Toast.makeText(getApplicationContext(), Integer.toString(Clc),
                                                                     Toast.LENGTH_LONG).show();
             }
@@ -197,4 +197,108 @@ public class CncrActivity extends AppCompatActivity {
         else return true;
     }
 
+    private Integer calcFunc(int x, int y, int z){
+        int cigssmoked = 0;
+        int freq = 0;
+        double len = 0;
+
+        switch (x){
+            case 1:
+                cigssmoked = 1;
+                break;
+            case 2:
+                cigssmoked = 5;
+                break;
+            case 3:
+                cigssmoked = 10;
+                break;
+            case 4:
+                cigssmoked = 15;
+                break;
+            case 5:
+                cigssmoked = 20;
+                break;
+            case 6:
+                cigssmoked = 25;
+                break;
+            case 7:
+                cigssmoked = 30;
+                break;
+            case 8:
+                cigssmoked = 35;
+                break;
+            case 9:
+                cigssmoked = 40;
+                break;
+            case 10:
+                cigssmoked = 50;
+                break;
+            case 11:
+                cigssmoked = 75;
+                break;
+            case 12:
+                cigssmoked = 100;
+                break;
+            case 13:
+                cigssmoked = 150;
+                break;
+        }
+
+        switch (y){
+            case 1:
+                freq = 100;
+                break;
+            case 2:
+                freq = 50;
+                break;
+            case 3:
+                freq = 10;
+                break;
+            case 4:
+                freq = 5;
+                break;
+            case 5:
+                freq = 2;
+                break;
+        }
+
+        switch (z){
+            case 1:
+                len = 1.05;
+                break;
+            case 2:
+                len = 1.1;
+                break;
+            case 3:
+                len = 1.5;
+                break;
+            case 4:
+                len = 1.8;
+                break;
+            case 5:
+                len = 2.1;
+                break;
+            case 6:
+                len = 2.3;
+                break;
+            case 7:
+                len = 3.0;
+                break;
+            case 8:
+                len = 3.5;
+                break;
+            case 9:
+                len = 4.0;
+                break;
+            case 10:
+                len = 5.0;
+                break;
+            case 11:
+                len = 7.5;
+                break;
+        }
+
+
+        return 1;
+    }
 }
